@@ -1,6 +1,9 @@
 const Item = ({ id, name, desc, toggle, setToggle }) => {
   return (
-    <div onClick={() => setToggle(id)} className="m-2 bg-slate-50 rounded-2xl">
+    <div
+      onClick={() => setToggle(id)}
+      className="m-2 bg-slate-50 rounded-2xl cursor-pointer"
+    >
       <div
         className={
           toggle === id
@@ -9,7 +12,13 @@ const Item = ({ id, name, desc, toggle, setToggle }) => {
         }
       >
         <h2>
-          <span className="pr-2 text-slate-400">{id < 10 ? `0${id}` : id}</span>
+          <span
+            className={
+              toggle === id ? "pr-2 text-green-600" : "pr-2 text-slate-400"
+            }
+          >
+            {id < 10 ? `0${id}` : id}
+          </span>
           {name}
         </h2>
         <p className="">{toggle === id ? "-" : "+"}</p>
