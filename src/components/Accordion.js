@@ -12,7 +12,7 @@ const Accordion = () => {
     }
   }
   return (
-    <div className="bg-slate-100 px-2 py-3 w-96">
+    <div className="bg-slate-100 px-2 py-3 w-72 sm:w-[400px] md:w-[550px] lg:w-[800px] m-auto mt-5 rounded-xl">
       {items.map((i) => (
         <Item
           id={i.id}
