@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Accordion from "./components/Accordion";
 
 const App = () => {
   return (
     <>
-      <h1 className="text-red-600 text-xl font-bold">Hello React</h1>
+      <Accordion />
     </>
   );
 };
